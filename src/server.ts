@@ -1,15 +1,13 @@
 import { Server } from "http";
 import app from "./app";
-import dotenv from "dotenv";
-
-dotenv.config();
+import config from "./config";
 
 let server: Server;
 
 const startServer = () => {
   try {
-    server = app.listen(process.env.PORT, () => {
-      console.log("server listening to port", process.env.PORT);
+    server = app.listen(config.port, () => {
+      console.log("server listening to port", config.port);
     });
   } catch (error) {
     console.log("server connection failed!");

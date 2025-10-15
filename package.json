@@ -2,8 +2,8 @@
   "name": "health-care-server",
   "version": "1.0.0",
   "main": "index.js",
-  "prisma":{
-    "schema":"./prisma/schema"
+  "prisma": {
+    "schema": "./prisma/schema"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,16 +15,21 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.17.1",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
     "zod": "^4.1.12"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.9",
     "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
     "prisma": "^6.17.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
