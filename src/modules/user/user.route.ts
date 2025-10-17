@@ -6,6 +6,8 @@ import { createPatientZodSchema } from "./user.validation";
 
 const router = Router();
 
+router.get("/", userController.getAll);
+
 router.post(
   "/create-patient",
   fileUploader.upload.single("file"),
